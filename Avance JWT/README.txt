@@ -27,3 +27,14 @@ POST http://localhost:8080/api/v1/demo --> Prueba para verificar correcto funcio
 }
 
 5. Verificar el ingreso a la ruta protegida ingresando el Token obtenido en Postman al realizar el logeo.
+
+
+____________________________________________________________________________________________________________________________________________________________________________
+
+Configuracion de MySQL para Railway en application properties   
+
+spring.datasource.url=jdbc:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}?useSSL=false&serverTimezone=UTC
+spring.datasource.username=${MYSQLUSER}
+spring.datasource.password=${MYSQLPASSWORD}
+
+
